@@ -1,7 +1,8 @@
-# MixedMessageGen
+# Madlibs Gen
 
 # This is one of my projects for my portfolio
-### This is going to be a Mixed Message Generator
+### This is going to be a Mad Lib Generator
+### This is also for my Codecademy Full-Stack Course
 
 # What it will do
 - Create a new message kinda base on Mad Libs
