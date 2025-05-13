@@ -10,20 +10,23 @@ function getRandomWord(category) {
     return wordList[Math.floor(Math.random() * wordList.length)];
 }
 
+// Function to replace placeholders with user-provided or random words
+function fillTemplate(template, userWords = {}) {
+    return template
+        .replace("{noun}", userWords.noun || getRandomWord("nouns"))
+        .replace("{verb}", userWords.verb || getRandomWord("verbs"))
+        .replace("{adjective}", userWords.adjective || getRandomWord("adjectives"))
+        .replace("{adverb}", userWords.adverb || getRandomWord("adverbs"))
+        .replace("{pluralNoun}", userWords.pluralNoun || getRandomWord("pluralNouns"));
+}
+
 // Function to generate a random Mad Lib
-function generateMadLib() {
+function generateMadLib(userWords = {}) {
     // Select a random template
     const template = templates[Math.floor(Math.random() * templates.length)];
 
-    // Replace placeholders with random words
-    const madLib = template
-        .replace("{noun}", getRandomWord("nouns"))
-        .replace("{verb}", getRandomWord("verbs"))
-        .replace("{adjective}", getRandomWord("adjectives"))
-        .replace("{adverb}", getRandomWord("adverbs"))
-        .replace("{pluralNoun}", getRandomWord("pluralNouns"));
-
-    return madLib;
+    // Fill the template with words
+    return fillTemplate(template, userWords);
 }
 
 module.exports = generateMadLib;
