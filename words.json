@@ -1,0 +1,7 @@
+{
+    "nouns": ["dog", "car", "tree", "house", "cat", "bird", "computer", "book", "phone", "bicycle", "flower", "mountain", "river", "chair", "pencil"],
+    "verbs": ["run", "jump", "swim", "dance", "write", "sing", "read", "climb", "paint", "cook", "drive", "laugh", "play", "build", "explore"],
+    "adjectives": ["happy", "blue", "fast", "bright", "angry", "tall", "short", "beautiful", "ugly", "funny", "serious", "kind", "brave", "lazy", "energetic"],
+    "adverbs": ["quickly", "silently", "gracefully", "happily", "loudly", "slowly", "eagerly", "carefully", "angrily", "cheerfully", "sadly", "bravely", "easily", "quietly", "awkwardly"],
+    "pluralNouns": ["dogs", "cars", "trees", "houses", "cats", "birds", "computers", "books", "phones", "bicycles", "flowers", "mountains", "rivers", "chairs", "pencils"]
+}
